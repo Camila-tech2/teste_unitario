@@ -2,42 +2,42 @@
 namespace app\libraries;
 
 class Medico{
-    private string $nome;
-    private float $telefone;
-    private string $endereco;
+    private string $nomeMedico;
+    private float $telefoneMedico;
+    private string $enderecoMedico;
     private string $crm;
 
 
-    public function __construct(String $nome, float $telefone, String $endereco, String $crm)
+    public function __construct(String $nomeMedico, float $telefoneMedico, String $enderecoMedico, String $crm)
     {
-        $this->nome = $nome;
-        $this->telefone = $telefone;
-        $this->endereco = $endereco;
+        $this->nomeMedico = $nomeMedico;
+        $this->telefoneMedico = $telefoneMedico;
+        $this->enderecoMedico = $enderecoMedico;
         $this->crm = $crm;
     }
 
-        public function setNome($nome){
-            $this->nome = $nome;
+        public function setNome($nomeMedico){
+            $this->nomeMedico = $nomeMedico;
         }
 
         public function getNome(){
-            return $this->nome;
+            return $this->nomeMedico;
         }
 
-        public function setTelefone($telefone){
-            $this->telefone = $telefone;
+        public function setTelefone($telefoneMedico){
+            $this->telefoneMedico = $telefoneMedico;
         }
 
         public function getTelefone(){
-            return $this->telefone;
+            return $this->telefoneMedico;
         }
 
-        public function setEndereco($endereco){
-            $this->endereco = $endereco;
+        public function setEndereco($enderecoMedico){
+            $this->enderecoMedico = $enderecoMedico;
         }
 
         public function getEndereco(){
-            return $this->endereco;
+            return $this->enderecoMedico;
         }
 
         public function setCrm($crm){
@@ -51,29 +51,69 @@ class Medico{
 
 
     class Paciente{
-        private string $name;
-        private float $preco;
+        private string $nomePaciente; 
+        private string $enderecoPaciente;
+        private float $telefonePaciente;
+        private float $numeroBeneficiario;
+        private string $doencasPrevias;
+        private string $remedioDeUsoContinuo;
     
-        public function __construct(String $name, float $preco)
+        public function __construct(String $nomePaciente, String $enderecoPaciente, float $telefonePaciente, float $numeroBeneficiario, String $doencasPrevias, String $remedioDeUsoContinuo)
         {
-            $this->name = $name;
-            $this->preco = $preco;
+            $this->nomePaciente = $nomePaciente;
+            $this->enderecoPaciente = $enderecoPaciente;
+            $this->telefonePaciente = $telefonePaciente;
+            $this->numeroBeneficiario = $numeroBeneficiario;
+            $this->doencasPrevias = $doencasPrevias;
+            $this->remedioDeUsoContinuo = $remedioDeUsoContinuo;
         }
     
-            public function setName($name){
-                $this->name = $name;
+            public function setNome($nomePaciente){
+                $this->nomePaciente = $nomePaciente;
             }
     
-            public function getName(){
-                return $this->name;
+            public function getNome(){
+                return $this->nomePaciente;
             }
     
-            public function setPreco($preco){
-                $this->preco = $preco;
+            public function setEndereco($enderecoPaciente){
+                $this->enderecoPaciente = $enderecoPaciente;
             }
     
-            public function getPreco(){
-                return $this->preco;
+            public function getEndereco(){
+                return $this->enderecoPaciente;
+            }
+
+            public function setTelefone($telefonePaciente){
+                $this->telefonePaciente = $telefonePaciente;
+            }
+    
+            public function getTelefone(){
+                return $this->telefonePaciente;
+            }
+
+            public function setBeneficiario($numeroBeneficiario){
+                $this->numeroBeneficiario = $numeroBeneficiario;
+            }
+    
+            public function getBeneficiario(){
+                return $this->numeroBeneficiario;
+            }
+
+            public function setDoencas($doencasPrevias){
+                $this->doencasPrevias = $doencasPrevias;
+            }
+    
+            public function getDoencas(){
+                return $this->doencasPrevias;
+            }
+
+            public function setRemedio($remedioDeUsoContinuo){
+                $this->remedioDeUsoContinuo = $remedioDeUsoContinuo;
+            }
+    
+            public function getRemedio(){
+                return $this->remedioDeUsoContinuo;
             }
         } 
 ?>
