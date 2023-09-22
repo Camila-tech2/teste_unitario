@@ -1,0 +1,23 @@
+{
+    "name": "aluno/teste_unitario",
+    "description": "Teste Unitario",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Camila"
+        }
+    ],
+    "phpunit/php-code-coverage":"^4.0.3",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
