@@ -250,31 +250,72 @@ class Consulta
 
 class Agendamento
 {
-  private string $nomeMedico;
-  private float $telefoneMedico;
-  private string $enderecoMedico;
-  private string $crm;
+  private float $numeroAgendamento;
+  private string $dataAgendamento;
+  private string $horaAgendamento;
+  private string $queixa;
+
+  private string $gravidade;
 
 
-  public function __construct(string $nomeMedico, float $telefoneMedico, string $enderecoMedico, string $crm)
+  public function __construct(float $numeroAgendamento, string $dataAgendamento, string $horaAgendamento, string $queixa, string $gravidade)
   {
-    $this->nomeMedico = $nomeMedico;
-    $this->telefoneMedico = $telefoneMedico;
-    $this->enderecoMedico = $enderecoMedico;
-    $this->crm = $crm;
+    $this->numeroAgendamento = $numeroAgendamento;
+    $this->dataAgendamento = $dataAgendamento;
+    $this->horaAgendamento = $horaAgendamento;
+    $this->queixa = $queixa;
+    $this->gravidade = $gravidade;
   }
 
-  public function setNome($nomeMedico)
+  public function setAgendamento($numeroAgendamento)
   {
-    $this->nomeMedico = $nomeMedico;
+    $this->numeroAgendamento = $numeroAgendamento;
   }
 
-  public function getNome()
+  public function getAgendamento()
   {
-    return $this->nomeMedico;
+    return $this->numeroAgendamento;
   }
 
+  public function setData($dataAgendamento)
+  {
+    $this->dataAgendamento = $dataAgendamento;
+  }
 
+  public function getData()
+  {
+    return $this->dataAgendamento;
+  }
+
+  public function setHora($horaAgendamento)
+  {
+    $this->horaAgendamento = $horaAgendamento;
+  }
+
+  public function getHora()
+  {
+    return $this->horaAgendamento;
+  }
+
+  public function setQueixa($queixa)
+  {
+    $this->queixa = $queixa;
+  }
+
+  public function getQueixa()
+  {
+    return $this->queixa;
+  }
+
+  public function setGravidade($gravidade)
+  {
+    $this->gravidade = $gravidade;
+  }
+
+  public function getGravidade()
+  {
+    return $this->gravidade;
+  }
 
 }
 ?>
