@@ -4,12 +4,6 @@ namespace tests;
     
     use PHPUnit\Framework\TestCase;
 
-    /*private float $numeroConsulta;
-    private string $dataConsulta;
-    private string $horaConsulta;
-  
-    private Agendamento $agendamentoConsulta;*/
-
     class ConsultaTest extends TestCase
     {
         public function testConsultaNumero(){

@@ -8,7 +8,6 @@ class Agendamento
   private string $dataAgendamento;
   private string $horaAgendamento;
   private string $queixa;
-
   private string $gravidade;
 
 
