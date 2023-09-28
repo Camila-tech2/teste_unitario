@@ -28,19 +28,19 @@
 
         
         public function testPacienteBeneficiario(){
-            $pacienteTelefone = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteBeneficiario = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
             
             $this->assertEquals(258741, $pacienteBeneficiario->getBeneficiario());
         }
 
         public function testPacienteDoencas(){
-            $pacienteTelefone = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteDoencas = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
             
             $this->assertEquals("Covid-19", $pacienteDoencas->getDoencas());
         }
         
         public function testPacienteRemedio(){
-            $pacienteTelefone = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteRemedio = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
             
             $this->assertEquals("Vitaminas", $pacienteRemedio->getRemedio());
         }
@@ -54,17 +54,45 @@
             $this->assertFalse(false);
         }
 
-        public function testSetPreco(){
-            $p1 = new Product("Celular IPHONE 8", 10000.00);
-            $p1->setPreco(10.00);
-            $this->assertEquals(10.00, $p1->getPreco());
+        public function testSetPacienteNome(){
+            $pacienteNome = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteNome->setNome("Silvio Santos");
+            $this->assertEquals("Silvio Santos", $pacienteNome->getNome());
         }
 
-        public function testSetName()
+        public function testSetPacienteEndereco()
         {
-            $p1 = new Product("Celular IPHONE 8", 10000.00);
-            $p1->setName('cel');
-            $this->assertEquals("cel", $p1->getName());
+            $pacienteEndereco = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteEndereco->setEndereco("Rua da Alegria");
+            $this->assertEquals("Rua da Alegria", $pacienteEndereco->getEndereco());
+        }
+
+        public function testSetPacienteTelefone()
+        {
+            $pacienteTelefone = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteTelefone->setTelefone(11958743256);
+            $this->assertEquals(11958743256, $pacienteTelefone->getTelefone());
+        }
+
+        public function testSetPacienteBeneficiario()
+        {
+            $pacienteBeneficiario = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteBeneficiario->setBeneficiario(147852);
+            $this->assertEquals(147852, $pacienteBeneficiario->getBeneficiario());
+        }
+
+        public function testSetDoencas()
+        {
+            $pacienteDoencas = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteDoencas->setDoencas("Catapora");
+            $this->assertEquals("Catapora", $pacienteDoencas->getDoencas());
+        }
+
+        public function testSetRemedio()
+        {
+            $pacienteRemedio = new Product("Fernanda Silva", "Rua do Pastel", 11935849635, 258741, "Covid-19", "Vitaminas", );
+            $pacienteRemedio->setRemedio("Loratadina");
+            $this->assertEquals("Loratadina", $pacienteRemedio->getRemedio());
         }
     }
 ?>
