@@ -1,5 +1,8 @@
 <?php 
 
+namespace app\libraries;
+use app\libraries\Agendamento;
+
 class Consulta
 {  
   private float $numeroConsulta;
@@ -53,7 +56,7 @@ class Consulta
     $this->agendamentoConsulta = $agendamentoConsulta;
   }
 
-  public function getAgendameto()
+  public function getAgendamento()
   {
     return $this->agendamentoConsulta;
   }

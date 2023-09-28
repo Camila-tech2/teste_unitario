@@ -1,5 +1,7 @@
 <?php 
 
+namespace app\libraries;
+
 class Agendamento
 {
   private float $numeroAgendamento;

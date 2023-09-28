@@ -1,5 +1,6 @@
 <?php 
 use app\libraries\Especialidade;
+use aap\libraries\Consulta;
 
 class Medico
 {

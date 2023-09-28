@@ -1,5 +1,7 @@
 <?php 
 
+use app\libraries\Consulta;
+
 class Paciente
 {
   private string $nomePaciente;
